@@ -50,7 +50,7 @@ Course: Udemy Python for Computer Vision with OpenCV and Deep Learning Course
 - `bitwise_*` : use bitwise functions to combine information of images with different size
   
 
-### [Thresholding](https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html)): 
+### [Thresholding](https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html): 
 Segment an image into different parts. In case of Binary Threshold it's only 2 parts, white and black. [ThresholdTypes](https://docs.opencv.org/4.x/d7/d1b/group__imgproc__misc.html#gaa9e58d2860d4afa658ef70a9b1115576)
 
 ![](images/thresholding.png)
@@ -75,7 +75,7 @@ There are a lot of types of [Feature Detection](https://en.wikipedia.org/wiki/Fe
 ### Histogram
 Is a visual representation of the distribution of a continuous feature.
 
-**Histogram Equalization** is a method of contrast adjustment based on the image's histogram. It transforms the maximum pixel value into 255 and the minimum to 0.
+**[Histogram Equalization](https://towardsdatascience.com/histogram-equalization-5d1013626e64)** is a method of contrast adjustment based on the image's histogram (increases the image contrast). It transforms the maximum pixel value into 255 and the minimum to 0.
 
 ![](images/hist_equalization.png)
 
