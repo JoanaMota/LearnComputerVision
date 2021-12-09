@@ -172,7 +172,7 @@ Used to **Segment images** into foreground and background, and also allow to man
 
 Watershed algorithm operates like a topographic map. Any grayscale image can be viewed as a topographic surface where high intensity denotes peaks and hills, while a low intensity denotes valleys. The algorithm can then feel every isolated valley or the local minimum with different colored water, **generating the different segments**. To avoid the merging of different segments the algorithm creates a barrier.
 
-For this algorithm we need to perform a [**Distance Trnasform**](https://homepages.inf.ed.ac.uk/rbf/HIPR2/distance.htm).
+For this algorithm we need to perform a [**Distance Transform**](https://homepages.inf.ed.ac.uk/rbf/HIPR2/distance.htm).
 
 Steps:
 1. Apply Blur
@@ -186,7 +186,7 @@ Steps:
 9. Get Contours
 
 #### Customized Watershed 
-<img src="images/watershed_algorithm2.png" alt="drawing" width="300"/>
+<img src="images/watershed_algorithm2.png" alt="drawing" width="500"/>
 
 ### [Facial and Eye Detection](https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html)
 <img src="images/face_eye_detection.png" alt="drawing" width="300"/>
