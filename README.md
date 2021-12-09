@@ -24,7 +24,7 @@ Course: Udemy Python for Computer Vision with OpenCV and Deep Learning Course
 
 **[Matplotlib:](https://matplotlib.org/stable/)** for plotting images.
 
-## Image Basics with OpenCV
+## 2. Image Basics with OpenCV
 
 ![](images/coordImage.png)
 
@@ -34,7 +34,7 @@ Course: Udemy Python for Computer Vision with OpenCV and Deep Learning Course
 
 **OpenCV** : BGR (BLUE, GREEN, RED)
 
-## 2. Image Processing
+## 3. Image Processing
 
 
 **Color Mappings**
@@ -79,9 +79,9 @@ Is a visual representation of the distribution of a continuous feature.
 
 <img src="images/hist_equalization.png" alt="drawing" width="500"/>
 
-## 3. [Video Basics](https://docs.opencv.org/4.x/dd/d43/tutorial_py_video_display.html)
+## 4. [Video Basics](https://docs.opencv.org/4.x/dd/d43/tutorial_py_video_display.html)
 
-## 4. Object Detection
+## 5. Object Detection
 
 ### [Template Matching](https://docs.opencv.org/4.x/d4/dc6/tutorial_py_template_matching.html)
 <img src="images/template_matching.png" alt="drawing" width="300"/>
