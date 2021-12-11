@@ -210,6 +210,10 @@ Process:
 
 You need a very large data set in order to create your own features or classifiers. We will be using some pre-trained classifiers (`.xml` files inside `hardcascades` folder)
 
+[`CascadeClassifier(*.xml)`](https://docs.opencv.org/3.4/d1/de5/classcv_1_1CascadeClassifier.html) : read cascade data from xml
+
+`cascade_classifier.detectMultiScale(...)` : find object from the classifiers
+
 
 
 
