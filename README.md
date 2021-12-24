@@ -13,7 +13,7 @@ Course: Udemy Python for Computer Vision with OpenCV and Deep Learning Course
 
 [Conda Cheat Sheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
 
-## 1. NumPy and Image Basics
+# 1. NumPy and Image Basics
 [NumPy Docs](https://numpy.org/doc/stable/user/quickstart.html)
 
 `.arrange()`: creates `int`
@@ -24,17 +24,17 @@ Course: Udemy Python for Computer Vision with OpenCV and Deep Learning Course
 
 **[Matplotlib:](https://matplotlib.org/stable/)** for plotting images.
 
-## 2. Image Basics with OpenCV
+# 2. Image Basics with OpenCV
 
 ![](images/coordImage.png)
 
-### Differences between Matplotlib and OpenCV
+## Differences between Matplotlib and OpenCV
 
 **Matplotlib** : RGB (RED, GREEN, BLUE)
 
 **OpenCV** : BGR (BLUE, GREEN, RED)
 
-## 3. Image Processing
+# 3. Image Processing
 
 
 **Color Mappings**
@@ -44,23 +44,23 @@ Course: Udemy Python for Computer Vision with OpenCV and Deep Learning Course
 | ![](images/rgb.png) | ![](images/hsl.png) | ![](images/hsv.png) |
 
 
-### [Adding (blending) two images](https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html): 
+## [Adding (blending) two images](https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html): 
 - `addWeighted` : if images have the same size
 - `bitwise_*` : use bitwise functions to combine information of images with different size
   
 
-### [Thresholding](https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html): 
+## [Thresholding](https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html): 
 Segment an image into different parts. In case of Binary Threshold it's only 2 parts, white and black. [ThresholdTypes](https://docs.opencv.org/4.x/d7/d1b/group__imgproc__misc.html#gaa9e58d2860d4afa658ef70a9b1115576)
 
 ![](images/thresholding.png)
 
-### [Blurring or Smoothing](https://www.tutorialspoint.com/dip/concept_of_blurring.htm)
+## [Blurring or Smoothing](https://www.tutorialspoint.com/dip/concept_of_blurring.htm)
 - is sometimes combined with edge detection
 - Gamma Correction: make image brighter or darker
 - [Image Kernels](https://setosa.io/ev/image-kernels/): apply filters to images
 - [Gaussian Blurring](https://en.wikipedia.org/wiki/Gaussian_blur)
 
-### [Morphological Operator](https://homepages.inf.ed.ac.uk/rbf/HIPR2/morops.htm)
+## [Morphological Operator](https://homepages.inf.ed.ac.uk/rbf/HIPR2/morops.htm)
 They are kernels(filters) used to improve the image, like: reducing noise
 
 Operations:
@@ -72,18 +72,18 @@ Operations:
 
 There are a lot of types of [Feature Detection](https://en.wikipedia.org/wiki/Feature_(computer_vision))
 
-### Histogram
+## Histogram
 Is a visual representation of the distribution of a continuous feature.
 
 **[Histogram Equalization](https://towardsdatascience.com/histogram-equalization-5d1013626e64)** is a method of contrast adjustment based on the image's histogram (increases the image contrast). It transforms the maximum pixel value into 255 and the minimum to 0.
 
 <img src="images/hist_equalization.png" alt="drawing" width="500"/>
 
-## 4. [Video Basics](https://docs.opencv.org/4.x/dd/d43/tutorial_py_video_display.html)
+# 4. [Video Basics](https://docs.opencv.org/4.x/dd/d43/tutorial_py_video_display.html)
 
-## 5. Object Detection
+# 5. Object Detection
 
-### [Template Matching](https://docs.opencv.org/4.x/d4/dc6/tutorial_py_template_matching.html)
+## [Template Matching](https://docs.opencv.org/4.x/d4/dc6/tutorial_py_template_matching.html)
 <img src="images/template_matching.png" alt="drawing" width="300"/>
 
 Find an **exact copy of an image** within another larger image. All it does is simply scan a larger image for a provided template by sliding that template target image across the larger image.
@@ -104,19 +104,19 @@ myfunc([1, 2, 3]) # 6
 
 OpenCV **`matchTemplate()`** returns an heat map. 
 
-### Corner Detection
+## Corner Detection
 <img src="images/corner_detection.png" alt="drawing" width="300"/>
 
 A **corner** is a point who's local neighborhood stands in two dominance and different edge directions. Popular algorithms are:
 - [Harris corner detector](https://docs.opencv.org/3.4/dc/d0d/tutorial_py_features_harris.html) : `cornerHarris()`
 - [Shi-Tomasi Corner Detection & Good Features to Track](https://docs.opencv.org/4.x/d4/d8c/tutorial_py_shi_tomasi.html) : ``
 
-### Edge Detection
+## Edge Detection
 <img src="images/edge_detection.png" alt="drawing" width="300"/>
 
 Finding Edges of objects. The most common algorithm is the [Canny Edge Detector](https://docs.opencv.org/3.4/da/d22/tutorial_py_canny.html) `Canny()`.
 
-### Grid Detection
+## Grid Detection
 <img src="images/grid_detection.png" alt="drawing" width="300"/>
 
 Are often used to calibrate cameras and track motion.
@@ -125,7 +125,7 @@ Are often used to calibrate cameras and track motion.
 
 `findCirclesGrid()`
 
-### [Contour Detection](https://learnopencv.com/contour-detection-using-opencv-python-c/)
+## [Contour Detection](https://learnopencv.com/contour-detection-using-opencv-python-c/)
 |          Input           |         External Contours         |         Internal Contours         |
 | :----------------------: | :-------------------------------: | :-------------------------------: |
 | ![](images/contours.png) | ![](images/External_Contours.png) | ![](images/Internal_Contours.png) |
@@ -138,7 +138,7 @@ It is also used to detect foreground VS background images and also differentiate
 
 `drawContours()`
 
-### [Feature Matching](https://docs.opencv.org/4.x/dc/dc3/tutorial_py_matcher.html)
+## [Feature Matching](https://docs.opencv.org/4.x/dc/dc3/tutorial_py_matcher.html)
 <img src="images/feature_matching.png" alt="drawing" width="300"/>
 
 Detecting matching objects in another image. 
@@ -164,7 +164,7 @@ Some methods are:
   drawMatchesKnn(...)
   ```
 
-### [Watershed Algorithm](https://docs.opencv.org/4.x/d3/db4/tutorial_py_watershed.html)
+## [Watershed Algorithm](https://docs.opencv.org/4.x/d3/db4/tutorial_py_watershed.html)
 <img src="images/watershed_algorithm.png" alt="drawing" width="300"/>
 
 
@@ -185,10 +185,10 @@ Steps:
 8. Use Markers as input for the Watershed algorithm
 9. Get Contours
 
-#### Customized Watershed 
+### Customized Watershed 
 <img src="images/watershed_algorithm2.png" alt="drawing" width="500"/>
 
-### [Facial and Eye Detection](https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html)
+## [Facial and Eye Detection](https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html)
 <img src="images/face_eye_detection.png" alt="drawing" width="300"/>
 
 Use **[Viola-Jones algorithm with Haar Cascades](https://towardsdatascience.com/viola-jones-algorithm-and-haar-cascade-classifier-ee3bfb19f7d8)** to detect faces, which has a run time of `O(1)` by using an integral image.  :warning: This is not facial recognition since that requires deep learning.
@@ -213,6 +213,49 @@ You need a very large data set in order to create your own features or classifie
 [`CascadeClassifier(*.xml)`](https://docs.opencv.org/3.4/d1/de5/classcv_1_1CascadeClassifier.html) : read cascade data from xml
 
 `cascade_classifier.detectMultiScale(...)` : find object from the classifiers
+
+
+# 6. Object Tracking
+## [Optical Flow](https://docs.opencv.org/3.4/d4/dee/tutorial_optical_flow.html)
+Pattern of apparent motion of image objects between two consecutive frames caused by the movement of object or camera.
+
+Optical flow assumptions:
+- The pixel intensities of an object do not change between consecutive frames.
+- Neighbouring pixels have similar motion.
+
+First we use **object detection** then we track the object.
+
+Methods used by OpenCV:
+- **Lucas-Kanade method**: only tracks the points which it was told to track (sparse feature set).
+
+
+<img src="images/lucas_kanade.jpg" alt="drawing" width="300"/>
+
+- **Dense Optical Flow**: calculates flow for all points in an image. The output flow is direction vector that contains magnitude and angle information.
+
+<img src="images/flow.png" alt="drawing" width="300"/>
+<img src="images/dense_optical_flow.png" alt="drawing" width="300"/>
+
+## [MeanShift and CAMShift Tracking](https://docs.opencv.org/3.4/d7/d00/tutorial_meanshift.html)
+
+Used for face tracking.
+
+**MeanShift** is used to locate the maxima of density. Is used for object tracking by creating a confidence map in the new image based on the color histogram of the object in the previous image, and use mean shift to find the peak of a confidence map near the object's old position. The confidence map is a probability density function on the new image, assigning each pixel of the new image a probability, which is the probability of the pixel color occurring in the object in the previous image.
+
+MeanShift does not change the window size  but we can use CAMShift for that purpose since it updates the window size.
+
+<img src="images/meanshift-step-by-step.png" alt="drawing" width="300"/>
+
+These do not work very well.
+
+## Other Tracking APIs
+|             Tracker Name              |                                                                Description                                                                |                             Pros                              |                                            Cons                                            |
+| :-----------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
+|               BOOSTING                |                                     Uses AdaBoost Algorithm. Evaluation occurs across multiple frames                                     |                         well studied                          |                           does not know when tracking has failed                           |
+|   Multiple Instance Learning (MIL)    |                                        Similar to Boosting but considers a neighborhood of points                                         |              does not drift as much as Boosting               | does not always report that tracking has failed and does not recover from full obstruction |
+| Kernelized Correlation Filters (KCF)  |                Similar to MIL but uses data of points that will overlap which leads to a more accurate and faster tracking                |                    better than MIL and KCF                    |                           does not recover from full obstruction                           |
+| Tracking Learning and Detection (TLD) | It localizes all appearances that have been observed so far and corrects the tracker if needed based on errors detected from the learning | works well with obstructions and under large changes in scale |                              can provide many false positives                              |
+|               MediaFlow               |                    Tracks the objects both in forward and backward directions and measures descrepancies between both                     | very good at reporting failed tracking and predictable motion |                               fails for fast moving objects                                |
 
 
 
