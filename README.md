@@ -13,6 +13,16 @@ Course: Udemy Python for Computer Vision with OpenCV and Deep Learning Course
 
 [Conda Cheat Sheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
 
+## Content
+1. [NumPy and Image Basics](#1-numpy-and-image-basics)
+2. [Image Basics with OpenCV](#2-image-basics-with-opencv)
+3. [Image Processing](#3-image-processing)
+4. [Video Basics](#4-video-basics)
+5. [Object Detection](#5-object-detection)
+6. [Object Tracking](#6-object-tracking)
+7. [Machine Learning](#machine-learning)
+8. [Deep Learning](#deep-learning)
+
 # 1. NumPy and Image Basics
 [NumPy Docs](https://numpy.org/doc/stable/user/quickstart.html)
 
@@ -257,6 +267,16 @@ These do not work very well.
 | Tracking Learning and Detection (TLD) | It localizes all appearances that have been observed so far and corrects the tracker if needed based on errors detected from the learning | works well with obstructions and under large changes in scale |                              can provide many false positives                              |
 |               MediaFlow               |                    Tracks the objects both in forward and backward directions and measures descrepancies between both                     | very good at reporting failed tracking and predictable motion |                               fails for fast moving objects                                |
 
+
+# Machine Learning
+
+# Deep Learning
+
+## Neurons
+
+## Neural Networks
+
+## Cost Functions
 
 
 
