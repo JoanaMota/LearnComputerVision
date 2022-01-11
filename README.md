@@ -270,13 +270,98 @@ These do not work very well.
 
 # Machine Learning
 
+The [MNIST](http://yann.lecun.com/exdb/mnist/) database is the most common database of handwritten digits.
+
+The [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) database is a common database of images in RGB.
+
+The [COCO](https://cocodataset.org/#home) database is a large-scale object detection, segmentation, and captioning dataset
+
 # Deep Learning
 
 ## Neurons
+`perceptron:` artificial neuron
+
+<img src="images/neuron.png" alt="drawing" width="300"/>
 
 ## Neural Networks
 
+3 different layers:
+- Input Layers
+- Hidden Layers : with 3 or more it's considered a deep network
+- Output layers 
+
+**[Activation function](https://en.wikipedia.org/wiki/Activation_function)** of a node defines the output of that node given an input or set of inputs. There are a lot of activation functions and **ReLu** and **tanh** tend to have the best performance.
+
+<img src="images/neuron.png" alt="drawing" width="300"/>
+
 ## Cost Functions
 
+Are used to measure how far off we are from the expected value.
+
+**Gradient decent** is an optimization algorithm for finding the minimum of a function.
+
+**Backpropagation** is used to calculate the error contribution of each neuron after a batch of data is processed. It works by calculating the error at the output and then distributes back through the network layers.
+
+## Convolution Neural Networks (CNNs)
+
+CNN in mostly used for analyzing images.
+
+[Understanding Deep Learning: DNN, RNN, LSTM, CNN and R-CNN](https://medium.com/@sprhlabs/understanding-deep-learning-dnn-rnn-lstm-cnn-and-r-cnn-6602ed94dbff)
+
+<img src="images/cnns.jpeg" alt="drawing" width="500"/>
+
+**Tensor:** N-dimensional array [[[1,2], [3,4]] , [[5,6], [7,8]]]
+
+They can be used to feed sets of images into the model with the following format: (I, H, W, C)
+- I: images
+- H: image height in pixels
+- W: image width in pixels
+- C: Color channels 1-Grayscale, 3-RGB 
+
+**Convolutions and Filters**
+
+Each filter detects a single feature.
+
+**1D Convolution Network:**
+
+|           1 Filter Stride of 1           |           1 Filter Stride of 2           |           2 Filters Stride of 2           |
+| :--------------------------------------: | :--------------------------------------: | :---------------------------------------: |
+| ![](images/1d_convo_1filter_stride1.png) | ![](images/1d_convo_1filter_stride2.png) | ![](images/1d_convo_2filters_stride2.png) |
+
+**1D Convolution Network with multiple filters:**
+
+<img src="images/2d_convo_multiple_filters.png" alt="drawing" width="300"/>
+
+**Filter applied to an image with different strides:**
+
+|    Filter with Stride of 1     |    Filter with Stride of 2     |
+| :----------------------------: | :----------------------------: |
+| ![](images/filter_stride1.png) | ![](images/filter_stride2.png) |
+
+**Padding**
+
+<img src="images/padding.png" alt="drawing" width="300"/>
+
+**Pooling Layers** will subsample the input image, which reduces the memory use and computer load as well as reducing the number of parameters. With a pooling layer we remove a lot of information of the input data (ex: 2x2 kernel with a stride of 2 will remove 75% of the input data). Generating a pooling layer:
+
+<img src="images/pooling.png" alt="drawing" width="300"/>
+
+
+**Dropout** is a form of regularization to help prevent overfitting.
+
+**Common CNN architectures:**
+- LeNet-5
+- AlexNet
+- GoogleNet
+- ResNet
+
+:warning: If you have a poor accuracy in your test data but really good on the training set that means you're probably overfitting to the training set.
+
+## YOLO (You Only Look Once)
+Image detection algorithm which can view an image and draw bounding boxes over what it perceives as identified classes.
+
+First it only applies a single neural network.Then this network divides the image into regions and predicts bounding boxes and probabilities for each region. So that actual division is happening within the neural network so that it only needs to view the image one time. And then these bounding boxes are weighted by the predicted probabilities. 
+
+It's 100x faster than Fast R-CNN.
 
 
