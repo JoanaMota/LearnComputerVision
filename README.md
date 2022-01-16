@@ -268,7 +268,7 @@ These do not work very well.
 |               MediaFlow               |                    Tracks the objects both in forward and backward directions and measures descrepancies between both                     | very good at reporting failed tracking and predictable motion |                               fails for fast moving objects                                |
 
 
-# Machine Learning
+# [Machine Learning](https://github.com/JoanaMota/LearnComputerVision/blob/main/MachineLearning.md)
 
 The [MNIST](http://yann.lecun.com/exdb/mnist/) database is the most common database of handwritten digits.
 
